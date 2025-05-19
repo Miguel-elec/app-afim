@@ -1,0 +1,9 @@
+<div class="item-dinero">
+    <button class="item-dinero-button "  (click)="aumentarCantidad()" (dblclick)="disminirCantidad()" [disabled]="estadoBoton">
+        <img class="item-dinero-img" [src]="imagen" alt="{{nombre}}"/>
+    </button>
+    @if(cantitadReuso){ 
+        <span class="contador-item">{{cantitadReuso}}</span>
+    }@else{
+    <span class="contador-item">{{cantidad()}}</span>}
+</div>

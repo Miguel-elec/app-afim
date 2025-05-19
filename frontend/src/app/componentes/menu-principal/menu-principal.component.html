@@ -1,0 +1,25 @@
+<div class="seccion-precio">
+    <div class="contenedor-entrada-precio">
+        <input type="number" [(ngModel)]="cantidadInicial" id="precio" class="entrada-precio"
+            placeholder="Introduzca el precio" />
+        <a class="boton-sonido" (click)="establecerCantidad()" aria-label="Reproducir precio">
+            <img src="assets/img/dinero.png" alt="Icono de dinero">
+        </a>
+        <button class="boton-sonido" aria-label="Reproducir precio" (click)="speak()">
+            <img src="assets/img/sound-icon.png" alt="Icono de sonido">
+        </button>
+    </div>
+</div>
+<div class="contenedor-saldos">
+    <div class="contenedor-entrada-precio">
+        <span class="etiqueta-saldo">Saldo</span>
+        <span class="contador-item">{{cantidadIntroducida}}</span>
+    </div>
+    <div class="contenedor-entrada-precio">
+        <span class="etiqueta-saldo">Cambio</span>
+        <span class="contador-item">{{resto}}</span>
+        <button (click)="irPanginaDinero()" class="boton-sonido" aria-label="Reproducir precio">
+            <img src="assets/img/cambio.png" alt="Icono de cambio">
+        </button>
+    </div>
+</div>

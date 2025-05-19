@@ -1,0 +1,49 @@
+{
+    "currency": [
+      {
+        "nombre": "Billete de 50 Euros",
+        "valor": 50,
+        "imagen": "src/assets/img/b50.jpeg"
+      },
+      {
+        "nombre": "Billete de 20 Euros",
+        "valor": 20,
+        "imagen": "src/assets/img/b20.jpeg"
+      },
+      {
+        "nombre": "Billete de 10 Euros",
+        "valor": 10,
+        "imagen": "src/assets/img/b10.jpg"
+      },
+      {
+        "nombre": "Billete de 5 Euros",
+        "valor": 5,
+        "imagen": "src/assets/img/b5.jpeg"
+      },
+      {
+        "nombre": "Moneda de 2 Euros",
+        "valor": 2,
+        "imagen": "src/assets/img/m2.jpeg"
+      },
+      {
+        "nombre": "Moneda de 1 Euro",
+        "valor": 1,
+        "imagen": "src/assets/img/m1.jpeg"
+      },
+      {
+        "nombre": "Moneda de 0.5 Euros",
+        "valor": 0.5,
+        "imagen": "./src/assets/img/m05.jpeg"
+      },
+      {
+        "nombre": "Moneda de 0.2 Euros",
+        "valor": 0.2,
+        "imagen": "./src/assets/img/m02.jpeg"
+      },
+      {
+        "nombre": "Moneda de 0.1Euros",
+        "valor": 0.1,
+        "imagen": "./src/assets/img/m01.jpeg"
+      }
+    ]
+  }

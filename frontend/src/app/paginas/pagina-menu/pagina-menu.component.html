@@ -1,0 +1,20 @@
+<div class="contenedor-app">
+      <header class="header-fixed">
+            <app-menu-principal [cantidadIntroducida]="totalRedondeado()" [resto]="restoRedondeado()"
+                  (eventoCantidadIntroducida)="establecerCantidadInicial($event)" [speak]="speak">
+            </app-menu-principal>
+            <div class="contenedor-titulo-bolsillo">
+                  <h2 class="titulo-bolsillo">Tu bolsillo</h2>
+                  <hr class="separador" />
+            </div>
+
+      </header>
+      <div class="bloque"></div>
+      <div class="rejilla-dinero">
+            @for(moneda of listaMonedas; track moneda.id){
+                  <app-money-box [resetSignal]="resetSignal" (eventoAumentar)="aumentarCantidad($event)"  (eventoDisminuir)="disminuirCantidad($event)"
+                  [id]="moneda.id" [imagen]="moneda.imagen" [nombre]="moneda.nombre" [estadoBoton]="estadoBotonCajas()"
+                  [valor]="moneda.valor"></app-money-box>
+            }
+      </div>
+</div>
