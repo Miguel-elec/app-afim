@@ -1,0 +1,15 @@
+<div class="contenedor-app">
+    <div class="contenedor-entrada-precio">
+        <h2 class="titulo-bolsillo" >Cambio</h2>
+        <button (click)="irPanginaDinero()" class="boton-sonido" aria-label="Reproducir precio">
+            <img src="assets/img/volver.png" alt="Icono de cambio">
+        </button>
+    </div>
+    <hr class="separador" />
+    <div class="rejilla-dinero">
+        @for(moneda of listaMonedas(); track moneda.id){
+        <app-money-box [resetSignal]="resetSignal" [cantitadReuso]="moneda.cantidad" [id]="moneda.id" [imagen]="moneda.imagen" [nombre]="moneda.nombre"
+            [valor]="moneda.valor"></app-money-box>
+        }
+    </div>
+</div>
